@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {urlConfig} from '../../config';
+
 
 function MainPage() {
-    const [gifts, setGifts] = useState([]);
-    const navigate = useNavigate();
+    const [gifts] = useState([]);
+    
 
     useEffect(() => {
         // Task 1: Write async fetch operation
@@ -18,9 +18,9 @@ function MainPage() {
       };
 
     // Task 3: Format timestamp
-    const formatDate = (timestamp) => {
+    //const formatDate = (timestamp) => {
         // Write your code below this line
-      };
+      //};
 
     const getConditionClass = (condition) => {
         return condition === "New" ? "list-group-item-success" : "list-group-item-warning";
